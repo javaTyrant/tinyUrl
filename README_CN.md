@@ -46,7 +46,8 @@ like https://app.bitly.com url shorten function with springboot
 
 下列流程图来源百度短链接服务实现流程图,和本项目代码略微有点出入,具体以代码为准
 
-![image](https://github.com/wujunshen/tiny-url/blob/master/image/image2020-4-22_19-15-22.png)
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0617/134848_59f399ab_43183.png "屏幕截图.png")
+
 
 #### 短链接自定义
 
