@@ -1,5 +1,6 @@
 package com.wujunshen.tinyurl.web.response;
 
+import java.util.stream.Stream;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -22,11 +23,9 @@ public enum UrlType {
   private final String type;
 
   public static UrlType getByCode(int code) {
-    for (UrlType urlType : UrlType.values()) {
-      if (urlType.ordinal() == code) {
-        return urlType;
-      }
-    }
-    return null;
+    return Stream.of(UrlType.values())
+        .filter(element -> element.ordinal() == code)
+        .findFirst()
+        .orElse(null);
   }
 }
