@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @Controller
-@RequestMapping("/t")
+@RequestMapping("/")
 public class RedirectController extends BaseController {
   @Resource private TinyUrlService tinyUrlService;
 

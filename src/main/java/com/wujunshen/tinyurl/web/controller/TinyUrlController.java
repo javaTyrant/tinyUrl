@@ -33,7 +33,6 @@ public class TinyUrlController extends BaseController {
      */
     @ResponseBody
     @PostMapping("/genTinyUrl")
-
     public BaseResponse genTinyUrl(
             @Valid @RequestBody GenTinyUrlRequest request,
             BindingResult bindingResult) {
