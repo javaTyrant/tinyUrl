@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 
 import lombok.extern.slf4j.Slf4j;
-import springfox.documentation.annotations.ApiIgnore;
 
 /**
  * @author frank woo(吴峻申) <br>
@@ -29,7 +28,6 @@ public class RedirectController extends BaseController {
    * @param tinyUrl 短链接
    * @return 原来长链接
    */
-  @ApiIgnore
   @GetMapping("/{tinyUrl}")
   public String getOriginUrl(@PathVariable("tinyUrl") String tinyUrl) {
     return "redirect:" + getOriginalUrl(tinyUrlService.getOriginUrl(tinyUrl));

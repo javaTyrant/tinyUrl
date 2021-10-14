@@ -4,9 +4,9 @@ spring:
   application:
     name: tiny-url
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/tiny_url?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
-    username: root
-    password: whatsfuck1979
+    url: jdbc:mysql://192.168.2.209:3306/vip?useUnicode=true&characterEncoding=utf8
+    username: opsa
+    password: pass123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       pool-name: HikariCP
@@ -49,18 +49,11 @@ swagger:
   license-url: http://www.license.com
   #缺省配置内容为:API文档
   title: 自定义标题名
-#redis settings
+  #redis settings
 redis:
-  cluster:
-    max-redirects: 6   # 获取失败最大重定向次数
-    nodes: 127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004,127.0.0.1:7005,127.0.0.1:7006
-    time-out: 60000
-    password:
-  pool:
-    max-active: 1000 #连接池最大的连接数，若使用负值表示没有限制
-    max-wait: 10000 #连接池最大阻塞等待时间
-    max-idle: 100 #最大空闲连接数
-    min-idle: 10 #最小空闲连接数
+  host: 192.168.3.206
+  port: 6300
+  password:
 #snowflake settings
 generate:
   worker: 100

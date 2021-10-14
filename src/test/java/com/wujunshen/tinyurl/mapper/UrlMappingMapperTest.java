@@ -1,10 +1,10 @@
 package com.wujunshen.tinyurl.mapper;
 
-import com.wujunshen.snowflake.service.IdService;
 import com.wujunshen.tinyurl.ApplicationTestBase;
 import com.wujunshen.tinyurl.common.utils.EncodeUtils;
 import com.wujunshen.tinyurl.common.utils.Md5Utils;
 import com.wujunshen.tinyurl.entity.UrlMapping;
+import com.wujunshen.tinyurl.service.IdService;
 import com.wujunshen.tinyurl.web.response.UrlType;
 
 import org.junit.jupiter.api.DisplayName;
